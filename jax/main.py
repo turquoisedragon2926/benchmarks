@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
+from typing import Union
 
+import jax.numpy as jnp
 import jax
 import numpy as np
 import scipy
@@ -19,7 +21,7 @@ num_gpus = int(os.environ.get("SLURM_GPUS"))
 
 # jax.config.update("jax_enable_x64", True)
 
-def host_subset(array: jax.Array | np.ndarray, size: int):
+def host_subset(array: Union[jnp.ndarray, np.ndarray], size: int):
     host_id = jax.process_index()
     start = host_id * size // num_gpus
     end = (host_id + 1) * size // num_gpus
