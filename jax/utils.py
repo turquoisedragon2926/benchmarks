@@ -3,6 +3,7 @@ import time
 
 
 def plot_graph(z):
+    return # temp
     with open("t.dot", "w") as f:
         f.write(z.as_hlo_dot_graph())
     with open("t.png", "wb") as f:
