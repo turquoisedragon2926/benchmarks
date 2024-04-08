@@ -56,7 +56,7 @@ print("total number of GPUs:", num_gpus)
 
 timing.log("random ICs")
 
-size = 1024
+size = 2048
 
 rng = np.random.default_rng(12345)
 x_np_full = rng.random((size, size, size), dtype=np.float32)
