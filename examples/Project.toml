@@ -1,0 +1,5 @@
+[deps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+ParametricOperators = "db9e0614-c73c-4112-a40c-114e5b366d0d"
+Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
